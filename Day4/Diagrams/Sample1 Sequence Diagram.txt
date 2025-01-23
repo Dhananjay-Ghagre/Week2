@@ -1,0 +1,16 @@
+Student
+GradeCalculator
+Student               GradeCalculator               Subject
+   |                          |                         |
+   |  requestGrade()          |                         |
+   |------------------------->|                         |
+   |                          |                         |
+   |                          | getSubjects()           |
+   |                          |------------------------>|
+   |                          |                         |
+   |                          |  for each Subject       |
+   |                          |  getMarks()             |
+   |                          |<------------------------|
+   |                          |                         |
+   |  return Grade            |                         |
+   |<-------------------------|   

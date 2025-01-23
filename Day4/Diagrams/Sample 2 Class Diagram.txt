@@ -1,0 +1,15 @@
+A Customer can purchase multiple Product items (Composition).
+BillGenerator computes the total for the Customer.
++------------------+         +-----------------+         +----------------------+
+|     Customer     |         |     Product     |         |    BillGenerator     |
++------------------+         +-----------------+         +----------------------+
+| - name           |         | - name          |         |                      |
+| - customerID     |         | - quantity      |         |                      |
+|                  |         | - pricePerUnit  |         |                      |
++------------------+         +-----------------+         +----------------------+
+| + addProduct()   |         | + getCost()     |         | + generateBill()     |
+| + getCart()      |         |                 |         |                      |
++------------------+         +-----------------+         +----------------------+
+        |                             ^                                 |
+        |---------------------------->|                                 |
+              Composition                                  Association

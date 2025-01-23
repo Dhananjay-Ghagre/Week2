@@ -1,0 +1,14 @@
+→ Draw the Object Diagram
++------------+
+| Student    |
+| John       |
+| ID: 101    |
++------------+
+       |
+       | Aggregation
+       v
++-----------+     +-----------+
+| Subject   |     | Subject   |
+| Maths     |     | Science   |
+| Marks: 90 |     | Marks: 85 |
++-----------+     +-----------+

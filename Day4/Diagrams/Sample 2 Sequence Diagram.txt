@@ -1,0 +1,15 @@
+Customer               BillGenerator               Product
+   |                          |                         |
+   |  requestBill()           |                         |
+   |------------------------->|                         |
+   |                          |                         |
+   |                          | getCart()               |
+   |                          |------------------------>|
+   |                          |                         |
+   |                          |  for each Product       |
+   |                          |  getCost()              |
+   |                          |<------------------------|
+   |                          |                         |
+   |  return Total Bill        |                         |
+   |<-------------------------|                         |
+
